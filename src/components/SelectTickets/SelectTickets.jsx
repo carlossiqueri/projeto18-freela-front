@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import {
   ContainerTicket,
   BodyTicket,
@@ -16,6 +16,7 @@ export default function TicketsByCity() {
   const { destination_id } = useParams();
   const [flights, setFlights] = useState([]);
   const [valor, setValor] = useState([0, 10000]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function fletchData() {
@@ -29,7 +30,11 @@ export default function TicketsByCity() {
 
     fletchData();
   }, [valor]);
-  console.log(valor);
+
+  function selectedTicket(id) {
+    navigate(`/tickets/${destination_id}/${id}`);
+  }
+
   return (
     <Page>
       <ContainerSlider>
@@ -43,12 +48,12 @@ export default function TicketsByCity() {
         {flights.map((f, index) => {
           return (
             <ContainerTicket key={index}>
-              <img
+              <img onClick={() => selectedTicket(f.id)}
                 src={
                   "/src/assets/Icon Airplane Clipart PNG Images, Airplane Icon, Airplane Icons, Airplane, Vector PNG Image For Free Download.jpg"
                 }
               />
-              <FlightTitle>
+              <FlightTitle onClick={() => selectedTicket(f.id)}>
                 Destino: {f.destino} <br /> Data do Vôo:{" "}
                 {dayjs(f.flight_date).format("YY-MM-DD")} <br /> Horário de
                 Partida: {f.departure}

@@ -45,7 +45,7 @@ export const FlightTitle = styled.h3`
 `;
 
 export const ContainerSlider = styled.div`
-margin-top: 140px;
+  margin-top: 140px;
   width: 600px;
   height: 800px;
   p {
@@ -64,3 +64,44 @@ export const SliderTitle = styled.h3`
   color: #112b3c;
   margin-bottom: 50px;
 `;
+
+export const SelectedTicketContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    margin-top: 120px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 26px;
+    color: #112b3c;
+    margin-bottom: 50px;
+  }
+  ul {
+    margin-top: 10px;
+  }
+  li {
+    list-style-type: circle;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 17px;
+    color: #112b3c;
+  }
+
+  button{
+    width: 269px;
+    height: 60px;
+    background: #e61c5d;
+    border-radius: 58px;
+    border: none;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 15px;
+    :hover {
+      cursor: pointer;
+      background-color: #ed3470;
+    }
+  }
+`;
+

@@ -35,7 +35,7 @@ export const UserBox = styled.div`
 `;
 
 export const NavItem = styled(Link)`
-  list-style-type: none;
+
   font-size: 24px;
   font-weight: 400;
   color: #808080;
