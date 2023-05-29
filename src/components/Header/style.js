@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HeaderBox = styled.div`
   width: 100vw;
   height: 100px;
-  background-color: #cec;
+  background-color: #fefefe;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,19 +23,18 @@ export const Logo = styled.h1`
 export const RedirectBox = styled.div`
   width: 560px;
   display: flex;
-  justify-content: space-between;
-
+  justify-content: space-around;
 `;
 
 export const UserBox = styled.div`
-width: 230px;
+  width: 230px;
   display: flex;
   align-items: center;
-    justify-content: space-between;
-    margin-right: 150px;
+  justify-content: space-between;
+  margin-right: 150px;
 `;
 
-export const NavItem = styled.li`
+export const NavItem = styled(Link)`
   list-style-type: none;
   font-size: 24px;
   font-weight: 400;

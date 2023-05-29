@@ -12,8 +12,8 @@ export default function HeaderBar() {
     <HeaderBox>
       <Logo>3StepsTrip</Logo>
       <RedirectBox>
-        <NavItem>Home</NavItem>
-        <NavItem>Sobre Nós</NavItem>
+        <NavItem to="/">Home</NavItem>
+        <NavItem to="/about">Sobre Nós</NavItem>
         <NavItem>Passagens</NavItem>
         <NavItem>Hospedagem</NavItem>
       </RedirectBox>
