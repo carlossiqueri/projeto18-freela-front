@@ -32,7 +32,7 @@ export default function TicketsByCity() {
   }, [valor]);
 
   function selectedTicket(id) {
-    navigate(`/tickets/${destination_id}/${id}`);
+    navigate(`/tickets/details/${id}`);
   }
 
   return (
@@ -48,7 +48,8 @@ export default function TicketsByCity() {
         {flights.map((f, index) => {
           return (
             <ContainerTicket key={index}>
-              <img onClick={() => selectedTicket(f.id)}
+              <img
+                onClick={() => selectedTicket(f.id)}
                 src={
                   "/src/assets/Icon Airplane Clipart PNG Images, Airplane Icon, Airplane Icons, Airplane, Vector PNG Image For Free Download.jpg"
                 }

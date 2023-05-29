@@ -89,13 +89,16 @@ export const SelectedTicketContainer = styled.div`
     color: #112b3c;
   }
 
-  button{
+  button {
     width: 269px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 60px;
     background: #e61c5d;
     border-radius: 58px;
     border: none;
-    font-size: 16px;
+    font-size: 24px;
     color: #ffffff;
     margin-top: 15px;
     :hover {
@@ -104,4 +107,3 @@ export const SelectedTicketContainer = styled.div`
     }
   }
 `;
-
