@@ -13,7 +13,6 @@ export function SelectedTicket (){
             .get(`http://localhost:5000/tickets/details/${flight_id}`)
                 .then((res) => {
                     setFlight(res.data);
-                    console.log(flight)
                 })
                 .catch(err => console.log(err.response.data))
     }, [])

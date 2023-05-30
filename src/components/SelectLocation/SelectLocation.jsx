@@ -59,10 +59,10 @@ export default function SelectLocation() {
 
         <img
           src={
-            "src/assets/Best Places to See the Northern Lights in Norway - Mapping Megan.jpg"
+            "https://i.pinimg.com/736x/a5/a6/76/a5a676538ddc6189d57507e2b5476f0c.jpg"
           }
         />
-        <img src={"src/assets/16 of the Best Places to Visit in Italy.jpg"} />
+        <img src={"https://i.pinimg.com/564x/15/f0/e0/15f0e0372d1e04df5f325d00e5899069.jpg"} />
       </Content>
     </Body>
   );

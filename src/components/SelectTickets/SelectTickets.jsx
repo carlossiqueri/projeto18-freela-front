@@ -23,8 +23,6 @@ export default function TicketsByCity() {
       const getTickets = await axios.get(
         `http://localhost:5000/tickets/${destination_id}?min=${valor[0]}&max=${valor[1]}`
       );
-
-      console.log(getTickets.data);
       setFlights(getTickets.data);
     }
 
@@ -51,7 +49,7 @@ export default function TicketsByCity() {
               <img
                 onClick={() => selectedTicket(f.id)}
                 src={
-                  "/src/assets/Icon Airplane Clipart PNG Images, Airplane Icon, Airplane Icons, Airplane, Vector PNG Image For Free Download.jpg"
+                  "https://i.pinimg.com/564x/8a/ce/92/8ace92b8ecb62d08ae1d6677603fb5de.jpg"
                 }
               />
               <FlightTitle onClick={() => selectedTicket(f.id)}>

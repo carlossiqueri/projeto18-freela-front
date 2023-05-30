@@ -22,7 +22,7 @@ export default function SliderThumbWithTooltip({ setValor }) {
       aria-label={["min", "max"]}
       min={0}
       max={10000}
-      defaultValue={[1000, 5000]}
+      defaultValue={[0, 5000]}
       onChangeEnd={(val) => setValor(val)}
       top={0}
       left={0}

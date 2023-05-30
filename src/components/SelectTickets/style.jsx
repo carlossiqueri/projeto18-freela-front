@@ -26,6 +26,10 @@ export const ContainerTicket = styled.div`
     border-radius: 50px;
     margin-bottom: 30px;
     box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
+    :hover{
+    cursor: pointer;
+    border: solid 2px black;
+  }
   }
   p {
     font-weight: 400;
@@ -33,7 +37,11 @@ export const ContainerTicket = styled.div`
     line-height: 17px;
     color: #112b3c;
     margin-bottom: 10px;
+    :hover{
+      cursor: pointer;
   }
+  }
+
 `;
 
 export const FlightTitle = styled.h3`
@@ -42,6 +50,9 @@ export const FlightTitle = styled.h3`
   line-height: 26px;
   color: #112b3c;
   margin-bottom: 10px;
+  :hover{
+    cursor: pointer;
+  }
 `;
 
 export const ContainerSlider = styled.div`
